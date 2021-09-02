@@ -65,7 +65,7 @@
 						<div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
 							<!--Foto de Perfil-->
 							<img class="img img-fluid img-thumbnail rounded-circle float-end" src="../images/CarolinaProfile.jpeg" alt="Profile Photo">
-							<div class="wthreecartaits wthreecartaits2 cart cart box_1"																
+							<div class="wthreecartaits wthreecartaits2 cart cart box_1">																
 							</div>
 						</div>
 						<!-- //cart details -->
