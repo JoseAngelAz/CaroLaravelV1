@@ -4,15 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
 	<!-- Main css -->
 	<!-- Bootstrap -->
 	<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
@@ -30,7 +21,7 @@
 	rel="stylesheet">
 	<!-- //web fonts -->
 	<!-- mi js -->
-	<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
+<!--script type="text/javascript" src="{{asset('js/app.js')}}"-->
 	<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 	<title>@yield('title')</title>
 </head>
@@ -218,7 +209,7 @@
 	<div class="copy-right py-3">
 		<div class="container">
 			<p class="text-center text-white">© 2021 Carolina Wireless. All rights reserved | Design by
-				<a href="http://angelazucena.com"> angelazucena.</a>
+				<a href="http://angelazucena.com"> angelazucena && Juan Serrano</a>
 			</p>
 		</div>
 	</div>
@@ -267,46 +258,6 @@
 
 	<!-- cart-js -->
 	<script src="{{asset('js/minicart.js')}}"></script>
-	<script>
-		paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
-
-		paypals.minicarts.cart.on('checkout', function (evt) {
-			var items = this.items(),
-				len = items.length,
-				total = 0,
-				i;
-
-			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
-
-			if (total < 3) {
-				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-				evt.preventDefault();
-			}
-		});
-	</script>
-	<!-- //cart-js -->
-
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
 	
 	<!-- scroll seller -->
 	<script src="{{asset('js/scroll.js')}}"></script>
@@ -356,5 +307,5 @@
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 </body>
-	<!-- popup modal (for location)-->
+	
 </html>
