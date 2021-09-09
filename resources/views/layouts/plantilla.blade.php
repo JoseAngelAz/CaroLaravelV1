@@ -14,12 +14,13 @@
 	<!-- menu style -->
 	<link href="{{asset('css/menu.css')}}" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Custom-Files -->
- <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 	<!-- web fonts -->
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	rel="stylesheet">
 	<!-- //web fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- mi js -->
 <!--script type="text/javascript" src="{{asset('js/app.js')}}"-->
 	<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
@@ -28,6 +29,7 @@
 <body>
 <!-- Header -->
 @include('layouts.topheader')
+
 <!--/Header-->
 
 <!--contenido-->
